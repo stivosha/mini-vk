@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.activityForResult.NewPostActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/newPostItemsBlock"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp">
+
+        <EditText
+            android:id="@+id/newPostEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/anythingNew"
+            android:background="@android:color/transparent"/>
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/newPostItemsBlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingVertical="5dp">
+        <ImageView
+            android:id="@+id/newPostItemsAttach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="45"
+            android:layout_alignParentLeft="true"
+            android:paddingHorizontal="5dp"
+            android:src="@drawable/ic_attach_36"/>
+        <ImageView
+            android:id="@+id/newPostItemsSmile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="5dp"
+            android:layout_toRightOf="@id/newPostItemsAttach"
+            android:src="@drawable/ic_smile_36"/>
+        <ImageView
+            android:id="@+id/newPostItemsSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_send_36"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.stivosha.finalwork.ui.activities.PostDetailActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/postDetailViewRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/postDetailErrorInternetConnectionBlock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="40dp"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_warning_100"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/internetConnectionErrorBlock" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/activityPostDetailCommentsList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/postDetailErrorInternetConnectionBlock"
+                android:layout_above="@id/postDetailCommentEditTextBlock"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <RelativeLayout
+                android:id="@+id/postDetailCommentEditTextBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingVertical="5dp">
+
+                <ImageView
+                    android:id="@+id/postDetailCommentAttach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingHorizontal="5dp"
+                    android:rotation="45"
+                    android:src="@drawable/ic_attach_36" />
+
+                <EditText
+                    android:id="@+id/postDetailCommentEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/postDetailCommentSmile"
+                    android:layout_toRightOf="@id/postDetailCommentAttach"
+                    android:background="@drawable/main_backgrround_shape"
+                    android:hint="@string/enterComment"
+                    android:maxLines="5"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="7dp" />
+
+                <ImageView
+                    android:id="@+id/postDetailCommentSmile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/postDetailCommentSend"
+                    android:paddingHorizontal="5dp"
+                    android:src="@drawable/ic_smile_36" />
+
+                <ImageView
+                    android:id="@+id/postDetailCommentSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingHorizontal="5dp"
+                    android:src="@drawable/ic_send_36" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

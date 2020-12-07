@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">final-work</string>
+    <string name="today">Сегодня</string>
+    <string name="yesterday">Вчера</string>
+    <string name="activityDetailTittle">Post detail</string>
+    <string name="ok">OK</string>
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="needPermission">App needs write permission to save images</string>
+    <string name="save_in_gallery">Save in gallery</string>
+    <string name="share">Share</string>
+    <string name="edit">Edit</string>
+    <string name="newPost">New post</string>
+    <string name="news">News</string>
+    <string name="favorite">Favorite</string>
+    <string name="profile">Profile</string>
+    <string name="cityFormat">City: %s</string>
+    <string name="educationPlaceFormat">Education place: %s</string>
+    <string name="followersFormat">%d followers</string>
+    <string name="seeMore">See more</string>
+    <string name="shareImage">Share image</string>
+    <string name="saveToGallery">Save to gallery</string>
+    <string name="noImageToShare">No image to share</string>
+    <string name="noImageToSave">No image to save</string>
+    <string name="commentsFormat">%d COMMENTS</string>
+    <string name="dFormat">%d</string>
+    <string name="anythingNew">Anything new?</string>
+    <string name="enterComment">Enter comment</string>
+    <string name="smileIconClicked">Smile icon clicked</string>
+    <string name="attachIconClicked">Attach icon clicked</string>
+    <string name="textFieldCantBeEmpty">Text field can not be empty</string>
+    <string name="seeMoreButtonClicked">See more button clicked</string>
+    <string name="editProfileButtonClicked">Edit profile button clicked</string>
+    <string name="internetConnectionErrorBlock">There is no internet connection, please try to reconnect and refresh the page.</string>
+
+    <integer name="com_vk_sdk_AppId">000000</integer>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/profileFragmentMainBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileFragmentAvatar"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/group_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:id="@+id/profileFragmentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Георгий Садовский"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/profileFragmentStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="inst: _stivosha_"
+                    android:textColor="@android:color/black"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="online" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/profileFragmentEditButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/main_backgrround_shape"
+            android:elevation="20dp"
+            android:text="@string/edit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/profile_new_post_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/main_backgrround_shape"
+            android:elevation="20dp"
+            android:text="@string/newPost"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="10dp">
+
+            <LinearLayout
+                android:id="@+id/profileFragmentCityBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_round_apartment_24" />
+
+                <TextView
+                    android:id="@+id/profileFragmentCityText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/cityFormat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profileFragmentEducationPlaceBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_outline_school_24" />
+
+                <TextView
+                    android:id="@+id/profileFragmentEducationPlaceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/educationPlaceFormat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profileFragmentFollowersBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_round_followers_24" />
+
+                <TextView
+                    android:id="@+id/profileFragmentFollowersText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/followersFormat" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/profileFragmentSeeMoreButton"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="start|center_vertical"
+                android:text="@string/seeMore"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileFragmentNewPostBlockAvatar"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/group_logo"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/profileFragmentNewPostBlockTextView"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:background="@drawable/main_backgrround_shape"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/profileFragmentNewPostBlockAvatar"
+            android:layout_toLeftOf="@id/profileFragmentNewPostBlockAttach"
+            android:paddingLeft="10dp"
+            android:text="@string/anythingNew"
+            android:layout_marginHorizontal="10dp"/>
+
+        <ImageView
+            android:id="@+id/profileFragmentNewPostBlockAttach"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_gallery_34" />
+    </RelativeLayout>
+</LinearLayout>

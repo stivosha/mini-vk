@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="ru.stivosha.finalwork.ui.customviews.PostView">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/postViewAvatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/group_logo"/>
+
+    <TextView
+        android:id="@+id/postViewTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        tools:text="абстрактные мемы для элиты всех сортов | АМДЭВС"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/postViewDateCreation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/tertiary_text_dark"
+        tools:text="2 часа назад"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/postViewTextContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        tools:text="CONTENT"/>
+
+    <ImageView
+        android:id="@+id/postViewImageContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/meme"/>
+
+    <ImageButton
+        android:id="@+id/postViewLikeButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_like"/>
+
+    <TextView
+        android:id="@+id/postViewLikesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="26"/>
+
+    <ImageButton
+        android:id="@+id/postViewCommentButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_comment"/>
+
+    <TextView
+        android:id="@+id/postViewCommentsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="26"/>
+
+    <ImageButton
+        android:id="@+id/postViewShareButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_share"/>
+
+    <TextView
+        android:id="@+id/postViewShareCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="26"/>
+</merge>

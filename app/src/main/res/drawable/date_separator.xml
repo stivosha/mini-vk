@@ -1,0 +1,10 @@
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <size android:height="10dp" />
+            <solid android:color="@android:color/tab_indicator_text"/>
+            <corners android:radius="10.0dp" />
+        </shape>
+    </item>
+</selector>

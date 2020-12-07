@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomNavigationElementPosts"
+        android:title="@string/news"
+        android:icon="@drawable/ic_posts_24"/>
+    <item
+        android:id="@+id/bottomNavigationElementFavorite"
+        android:title="@string/favorite"
+        android:icon="@drawable/ic_favorite_24"/>
+
+    <item
+        android:id="@+id/bottomNavigationElementProfile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_profile_24"/>
+</menu>
