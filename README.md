@@ -12,3 +12,5 @@
 + Правка мелких ошибок
 
 Для работы добавьте свой appId отсюда https://vk.com/dev/access_token в файлах строк. Не использовал vk sdk намеренно, для изучения retrofit.
+
+![image](https://github.com/stivosha/mini-vk/assets/32033856/b30fb7de-6eca-4fb6-8d39-91c46483e81f)
